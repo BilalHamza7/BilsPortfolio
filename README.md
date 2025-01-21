@@ -12,3 +12,6 @@ Welcome to my personal portfolio website! This platform showcases my projects, s
 - **Frontend**: React/HTML/CSS/JavaScript
 - **Styling**: Tailwind
 - **Hosting**: Vercel
+
+## How to Access  
+Visit my portfolio at: N/A
