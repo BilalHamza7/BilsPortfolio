@@ -5,15 +5,6 @@ import About from "./about";
 import Contact from "./contact";
 
 export default function Homepage(params) {
-    // function handleMenuClick() {
-
-    //     return (
-    //         <>
-
-    //         </>
-    //     )
-    // };
-
 
     const [isAtTop, setIsAtTop] = useState(true);
 
@@ -53,7 +44,7 @@ export default function Homepage(params) {
 
             {/* Footer */}
             <div className="flex gap-5 bg-[#0D0D0D] p-10">
-                <div className="flex flex-col w-full border justify-center gap-3 md:tracking-wider text-white text-center font-gupter col-span-2">
+                <div className="flex flex-col w-full justify-center gap-3 md:tracking-wider text-white text-center font-gupter col-span-2">
                     <p className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl">BILAL HAMZA</p>
                     <p className="text-xs sm:text-lg md:text-xl lg:text-2xl">&copy; 2025 - All Rights Reserved</p>
                 </div>

@@ -7,9 +7,9 @@ export default function Contact() {
                 <p className="font-extralight text-white font-montserrat text-xs sm:text-lg">bilalhamzazuhry@gmail.com</p>
                 <p className="font-extralight text-white font-montserrat text-xs sm:text-lg">+94 77 388 8721</p>
                 <div className="flex gap-10">
-                    <img src="linkedinLogo.png" alt="linkedin" className="w-14 sm:w-16" />
-                    <img src="githubLogo.png" alt="github" className="w-14 sm:w-16" />
-                    <img src="instagramIcon.png" alt="instagram" className="w-14 sm:w-16" />
+                    <img src="linkedinLogo.png" alt="linkedin" className="w-12 sm:w-16" />
+                    <img src="githubLogo.png" alt="github" className="w-12 sm:w-16" />
+                    <img src="instagramIcon.png" alt="instagram" className="w-12 sm:w-16" />
                 </div>
             </div>
         </>
