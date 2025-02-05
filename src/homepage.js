@@ -3,10 +3,16 @@ import Profile from "./profile";
 import Projects from "./projects";
 import About from "./about";
 import Contact from "./contact";
+import NavPanel from "./components/navPanel";
 
 export default function Homepage(params) {
 
     const [isAtTop, setIsAtTop] = useState(true);
+    const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+    const handlePanel = () => {
+        setIsPanelOpen(!isPanelOpen);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,23 +29,41 @@ export default function Homepage(params) {
     return (
         <>
             {/* Navigation */}
-            <div className="flex justify-between items-center px-10 py-8 h-10 bg-[#141414] w-full fixed z-50 top-0 left-0">
-                <p className={`text-white font-gupter transition-all duration-700 ${isAtTop ? 'translate-x-7 translate-y-16 text-[60px]' : 'text-3xl'}`}>Bilal Hamza</p>
-                <img src="menuIcon.png" alt="menu" className="w-7" />
+            <div className="flex max-lg:justify-end lg:justify-between items-center px-10 py-8 h-10 bg-[#141414] w-full fixed z-50 top-0 left-0">
+                <div className="flex gap-10 max-lg:hidden text-center font-extralight text-white font-montserrat">
+                    <a href='#top'>Profile</a>
+                    <a href='#projects'>Projects</a>
+                </div>
+                <p className={`absolute left-1/2 transform -translate-x-1/2 pointer-events-none w-full text-center text-white font-gupter transition-all duration-700 ${isAtTop ? 'translate-y-16 text-[56px] sm:translate-y-20 sm:text-[90px] md:translate-y-24 md:text-[110px] lg:translate-y-28 lg:text-[150px] xl:translate-y-32 xl:text-[190px]' : 'text-3xl sm:text-4xl md:text-5xl'}`}>Bilal Hamza</p>
+                <div className="flex gap-10 max-lg:hidden text-center font-extralight text-white font-montserrat">
+                    <a href='#about'>About</a>
+                    <a href='#contact'>Contact</a>
+                </div>
+                <img src="menuIcon.png" alt="menu" className="w-7 lg:hidden" onClick={handlePanel} />
             </div>
+
+            {isPanelOpen && <NavPanel close={handlePanel} />}
 
             <div className="bg-[#141414] min-h-screen mt-8 p-10">
                 {/* profile */}
-                <Profile />
+                <div id="profile" >
+                    <Profile />
+                </div>
 
                 {/* projects */}
-                <Projects />
+                <div id="projects" >
+                    <Projects />
+                </div>
 
                 {/* about */}
-                <About />
+                <div id="about">
+                    <About />
+                </div>
 
                 {/* contact */}
-                <Contact />
+                <div id="contact">
+                    <Contact />
+                </div>
             </div>
 
             {/* Footer */}
@@ -49,9 +73,9 @@ export default function Homepage(params) {
                     <p className="text-xs sm:text-lg md:text-xl lg:text-2xl">&copy; 2025 - All Rights Reserved</p>
                 </div>
                 <div className="flex flex-col w-fit justify-center text-gray-400 text-left space-y-3 md:space-y-5 font-gupter text-sm sm:text-lg md:text-xl lg:text-2xl">
-                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Profile</p>
-                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.open('', '_blank')}>See My Resume</p>
-                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.open('https://github.com/BilalHamza7/BilsPortfolio', '_blank')}>See This Page in GitHub</p>
+                    <a className="hover:underline w-fit" href='#top'>Profile</a>
+                    <a className="hover:underline w-fit" href='' rel="noreferrer">See My Resume</a>
+                    <a className="hover:underline w-fit" href='https://github.com/BilalHamza7/BilsPortfolio' target="_blank" rel="noreferrer">See This Page in GitHub</a>
                 </div>
             </div>
         </>

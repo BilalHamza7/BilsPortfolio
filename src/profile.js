@@ -1,9 +1,9 @@
 export default function Profile() {
     return (
         <>
-            <div className="mt-16 flex flex-col items-center">
-                <p className="font-montserrat tracking-wider font-light text-white text-center text-xs sm:text-base px-24">A full-stack software engineer from Colombo, Sri Lanka. I build performant web applications and thrive on solving complex problems through innovative solutions.</p>
-                <div className="mt-6 flex flex-wrap items-center justify-center gap-3 font-extralight text-white font-montserrat text-xs sm:text-base">
+            <div className="mt-16 sm:mt-24 md:mt-28 lg:mt-36 xl:mt-44 flex flex-col items-center">
+                <p className="font-montserrat tracking-wider font-light text-white text-center text-xs sm:text-base md:px-16">A full-stack software engineer from Colombo, Sri Lanka. I build performant web applications and thrive on solving complex problems through innovative solutions.</p>
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-3 font-extralight text-white font-montserrat text-xs sm:text-sm">
                     <p>Problem Solver</p>
                     <p>Continuos Learner</p>
                     <p>Quick Learner</p>
