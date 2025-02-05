@@ -52,15 +52,15 @@ export default function Homepage(params) {
             </div>
 
             {/* Footer */}
-            <div className="grid grid-cols-3 gap-5 bg-[#0D0D0D] p-10">
-                <div className="flex flex-col justify-center gap-2 text-white text-center font-gupter col-span-2">
-                    <p className="text-4xl">BILAL HAMZA</p>
-                    <p className="">&copy; 2025 - All Rights Reserved</p>
+            <div className="flex gap-5 bg-[#0D0D0D] p-10">
+                <div className="flex flex-col w-full border justify-center gap-3 md:tracking-wider text-white text-center font-gupter col-span-2">
+                    <p className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl">BILAL HAMZA</p>
+                    <p className="text-xs sm:text-lg md:text-xl lg:text-2xl">&copy; 2025 - All Rights Reserved</p>
                 </div>
-                <div className="text-gray-400 text-left space-y-3 font-gupter text-xs">
-                    <p className="">Profile</p>
-                    <p className="">See My Resume</p>
-                    <p className="">See This Page in GitHub</p>
+                <div className="flex flex-col w-fit justify-center text-gray-400 text-left space-y-3 md:space-y-5 font-gupter text-sm sm:text-lg md:text-xl lg:text-2xl">
+                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Profile</p>
+                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.open('', '_blank')}>See My Resume</p>
+                    <p className="hover:underline w-fit cursor-pointer" onClick={() => window.open('https://github.com/BilalHamza7/BilsPortfolio', '_blank')}>See This Page in GitHub</p>
                 </div>
             </div>
         </>

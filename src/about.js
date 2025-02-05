@@ -82,10 +82,65 @@ export default function About() {
                 </div>
 
                 {/* Milestones */}
-                <div className="grid grid-cols-3 gap-1 items-center">
+                <div className="grid grid-cols-3 items-center">
+                    <div className="col-span-3 sm:hidden mb-4 font-gupter text-white text-2xl">Milestones <span className="text-xs">Throughout The Years</span></div>
+
                     {/* Row 1 */}
-                    <div className="flex flex-col gap-2 text-left font-extralight text-white font-montserrat text-xs">
-                        <img src="milestone1.1.jpg" alt="milestone" className="w-full rounded-lg" />
+                    <div className="flex flex-col w-52 sm:w-full gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone1.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                        <div className="">
+                            <p className="text-xl font-semibold">2024 Dec</p>
+                            <p className="">Currently enrolled for the Computer Science Degree program by Coventry University at NIBM Colombo</p>
+                        </div>
+                    </div>
+
+
+                    <div className="flex justify-center  col-span-3 sm:col-span-1 sm:w-full">
+                        <div className="w-6 h-48 sm:w-full sm:h-6 bg-gradient-to-t sm:bg-gradient-to-l from-slate-700 to-slate-900 rounded-xl"></div>
+                    </div>
+
+
+                    <div className="flex flex-col w-52 sm:w-full gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone2.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                        <div className="">
+                            <p className="text-xl font-semibold">2023 Dec</p>
+                            <p className="">Completed my HND in Software Engineering at NIBM with a broader idea of latest technologies</p>
+                        </div>
+                    </div>
+
+
+                    <div className="col-span-2 max-sm:hidden ml-5 font-gupter text-white text-4xl">Milestones <span className="text-xs">Throughout The Years</span></div>
+
+                    <div className="flex justify-center col-span-3 sm:col-span-1 sm:w-full">
+                        <div className="w-6 h-48 bg-gradient-to-t from-slate-700 to-slate-900 rounded-xl"></div>
+                    </div>
+
+
+                    <div className="flex flex-col w-52 sm:w-full gap-2 col-span-3 sm:col-span-1 sm:col-start-3 text-center font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone3.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                        <div className="">
+                            <p className="text-xl font-semibold">2022 Aug</p>
+                            <p className="">Graduated my diploma in software engineering with distinction at NIBM, with new friends and lessons</p>
+                        </div>
+                    </div>
+
+
+                    <div className="flex justify-center  col-span-3 sm:col-span-1 sm:col-start-2 sm:row-start-3 sm:w-full">
+                        <div className="w-6 h-48 sm:w-full sm:h-6 bg-gradient-to-t sm:bg-gradient-to-l from-slate-700 to-slate-900 rounded-xl"></div>
+                    </div>
+
+
+                    <div className="flex flex-col w-52 sm:w-full gap-2 col-span-3 sm:col-span-1 sm:col-start-1 sm:row-start-3 text-center font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone4.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                        <div className="">
+                            <p className="text-xl font-semibold">2021 Apr</p>
+                            <p className="">Introduced to the world of software development by completing a certificate in software engineering at NIBM</p>
+                        </div>
+                    </div>
+
+
+                    {/* <div className="flex flex-col gap-2 text-left font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone1.1.jpg" alt="milestone" className="w-full h-40 sm:object-cover rounded-lg" />
                         <div className="">
                             <p className="text-xl">2024 Dec</p>
                             <p className="">Currently enrolled for the Computer Science Degree program by Coventry University at NIBM Colombo</p>
@@ -93,20 +148,20 @@ export default function About() {
                     </div>
                     <div className="h-6 bg-gradient-to-l from-slate-700 to-slate-900 rounded-xl"></div>
                     <div className="flex flex-col gap-2 text-left font-extralight text-white font-montserrat text-xs">
-                        <img src="milestone2.1.jpg" alt="milestone" className="w-full rounded-lg" />
+                        <img src="milestone2.1.jpg" alt="milestone" className="w-full h-40 sm:object-cover rounded-lg" />
                         <div className="">
                             <p className="text-xl">2023 Dec</p>
                             <p className="">Completed my HND in Software Engineering at NIBM with a broader idea of latest technologies</p>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Row 2 */}
-                    <div className="h-6 col-span-2 font-gupter text-white text-2xl">Milestones <span className="text-xs">Throughout The Years</span></div>
+                    {/* <div className="h-6 col-span-2 font-gupter text-white text-2xl">Milestones <span className="text-xs">Throughout The Years</span></div>
                     <div className="flex justify-center">
                         <div className="w-6 h-48 bg-gradient-to-t from-slate-500 to-slate-700 rounded-xl"></div>
-                    </div>
+                    </div> */}
                     {/* Row 3 */}
-                    <div className="flex flex-col gap-2 text-left font-extralight text-white font-montserrat text-xs">
-                        <img src="milestone4.1.jpg" alt="milestone" className="w-full rounded-lg" />
+                    {/* <div className="flex flex-col gap-2 text-left font-extralight text-white font-montserrat text-xs">
+                        <img src="milestone4.1.jpg" alt="milestone" className="w-full h-40 sm:object-cover rounded-lg" />
                         <div className="">
                             <p className="text-xl">2021 Apr</p>
                             <p className="">Introduced to the world of software development by completing a certificate in software engineering at NIBM</p>
@@ -114,27 +169,27 @@ export default function About() {
                     </div>
                     <div className="h-6 bg-gradient-to-r from-slate-100 to-slate-500 rounded-xl"></div>
                     <div className="flex flex-col gap-2 font-extralight text-white font-montserrat text-xs text-left">
-                        <img src="milestone3.1.jpg" alt="milestone" className="w-full rounded-lg" />
+                        <img src="milestone3.1.jpg" alt="milestone" className="w-full h-40 sm:object-cover rounded-lg" />
                         <div className="">
                             <p className="text-xl">2022 Aug</p>
                             <p className="">Graduated my diploma in software engineering with distinction at NIBM, with new friends and lessons</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Interests */}
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl">What I Like</p>
-                <div className="flex justify-between gap-5">
-                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs">
-                        <img src="football1.jpg" alt="football" className="w-28 rounded-md" />
+                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I Like</p>
+                <div className="flex justify-between gap-5 sm:gap-10">
+                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs sm:text-lg md:text-xl">
+                        <img src="football1.jpg" alt="football" className="w-28 sm:w-48 md:w-72 rounded-md" />
                         <p>Football</p>
                     </div>
-                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs">
-                        <img src="touchTyping1.jpg" alt="football" className="w-28 rounded-md" />
+                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs sm:text-lg md:text-xl">
+                        <img src="touchTyping1.jpg" alt="football" className="w-28 sm:w-48 md:w-72 rounded-md" />
                         <p>Touch Typing</p>
                     </div>
-                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs">
-                        <img src="gaming1.jpg" alt="football" className="w-28 rounded-md" />
+                    <div className="flex flex-col gap-2 text-center font-extralight text-white font-montserrat text-xs sm:text-lg md:text-xl">
+                        <img src="gaming1.jpg" alt="football" className="w-28 sm:w-48 md:w-72 rounded-md" />
                         <p>Gaming</p>
                     </div>
                 </div>
