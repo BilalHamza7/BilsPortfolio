@@ -38,13 +38,13 @@ export default function Projects() {
             <div className=" mt-6 lg:mt-12 flex flex-col gap-10 items-center">
                 <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I've Built</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 font-montserrat">
-                    <a href="https://www.figma.com/proto/Fk924sx721kYF91AEqoSfK/GemsOfCeylon?node-id=114-148&t=RXi656d17JOrUElq-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6&hide-ui=1" target="_blank" rel="noreferrer" >
+                    <a href="https://project-promptopia-bilalhamza7s-projects.vercel.app/" target="_blank" rel="noreferrer" >
                         <ProjectImages src={projects[0][rowIndex]} desc='An AI-prompt sharing website developed using Next.js and tailwindcss' />
                     </a>
-                    <a href="https://www.figma.com/proto/Fk924sx721kYF91AEqoSfK/GemsOfCeylon?node-id=114-148&t=RXi656d17JOrUElq-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6&hide-ui=1" target="_blank" rel="noreferrer" >
+                    <a href="https://crafts-of-ceylon.vercel.app/" target="_blank" rel="noreferrer" >
                         <ProjectImages src={projects[1][rowIndex]} desc='An E-commerce platform to buy and sell handcrafted Sri Lankan Products' />
                     </a>
-                    <a href="https://www.figma.com/proto/Fk924sx721kYF91AEqoSfK/GemsOfCeylon?node-id=114-148&t=RXi656d17JOrUElq-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6&hide-ui=1" target="_blank" rel="noreferrer" >
+                    <a href="https://pearl-island.vercel.app/" target="_blank" rel="noreferrer" >
                         <ProjectImages src={projects[2][rowIndex]} desc='A platform to buy all kinds of precious gemstones built using the MERN stack' />
                     </a>
                 </div>

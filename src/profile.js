@@ -23,7 +23,7 @@ export default function Profile() {
                     <a href="https://github.com/BilalHamza7?tab=repositories" target="_blank" rel="noreferrer" className="hover:scale-95 transition duration-500">
                         <img src="githubLogo.png" alt="github" />
                     </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bilalhamzazuhry@gmail.com&su=SUBJECT&body=BODY" target="_blank" rel="noreferrer" className="hover:scale-95 transition duration-500">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noreferrer" className="hover:scale-95 transition duration-500">
                         <img src="gmailLogo.png" alt="gmail" />
                     </a>
                 </div>
