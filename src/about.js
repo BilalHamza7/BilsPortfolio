@@ -1,4 +1,16 @@
 export default function About() {
+
+    const milestones3 = [
+        'milestones3.1.jpg',
+        'milestones3.2.jpg',
+    ];
+
+    const milestones4 = [
+        'milestones4.1.jpg',
+        'milestones4.2.jpg',
+    ];
+
+
     return (
         <>
             <div className="mt-6 flex flex-col gap-10 items-center">
