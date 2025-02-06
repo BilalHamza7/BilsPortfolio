@@ -1,15 +1,32 @@
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import MilestoneSlider from "./components/milestoneSlider";
+import InterestSlider from "./components/interestSlider";
+
 export default function About() {
 
-    const milestones3 = [
-        'milestones3.1.jpg',
-        'milestones3.2.jpg',
-    ];
+    const milestones = [
+        ['milestone3.1.jpg', 'milestone3.2.jpg'],
+        ['milestone4.1.jpg', 'milestone4.2.jpg']
+    ]
 
-    const milestones4 = [
-        'milestones4.1.jpg',
-        'milestones4.2.jpg',
-    ];
+    const interests = [
+        ['football1.jpg', 'football2.jpg', 'football3.jpg'],
+        ['touchTyping1.jpg', 'touchTyping2.png', 'touchTyping3.png'],
+        ['gaming4.jpg', 'gaming2.jpg', 'gaming3.jpg'],
+    ]
 
+    const [milestoneIndex, setMilestoneIndex] = useState(0);
+    const [interestIndex, setInterestIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setMilestoneIndex((prevIndex) => (prevIndex + 1) % milestones.length);
+            setInterestIndex((prevIndex) => (prevIndex + 1) % interests.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <>
@@ -98,7 +115,7 @@ export default function About() {
                 <div className="grid grid-cols-3 items-center sm:mt-6">
 
                     {/* Row 1 */}
-                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs">
+                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs hover:scale-105 transition duration-500">
                         <img src="milestone1.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
                         <div className="flex gap-4 items-center">
                             <p className="text-xl font-semibold">2024 Dec</p>
@@ -112,7 +129,7 @@ export default function About() {
                     </div>
 
 
-                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs">
+                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 text-center font-extralight text-white font-montserrat text-xs hover:scale-105 transition duration-500">
                         <img src="milestone2.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
                         <div className="flex gap-4 items-center">
                             <p className="text-xl font-semibold">2023 Dec</p>
@@ -128,8 +145,9 @@ export default function About() {
                     </div>
 
                     {/* Row 3 */}
-                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 sm:col-start-3 text-center font-extralight text-white font-montserrat text-xs">
-                        <img src="milestone3.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 sm:col-start-3 text-center font-extralight text-white font-montserrat text-xs hover:scale-105 transition duration-500">
+                        {/* <img src="milestone3.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" /> */}
+                        <MilestoneSlider src={milestones[0][milestoneIndex]} />
                         <div className="flex gap-4 items-center">
                             <p className="text-xl font-semibold">2022 Aug</p>
                             <p className="text-left">Graduated my diploma in software engineering with distinction at NIBM, with new friends and lessons</p>
@@ -142,8 +160,9 @@ export default function About() {
                     </div>
 
 
-                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 sm:col-start-1 sm:row-start-3 text-center font-extralight text-white font-montserrat text-xs">
-                        <img src="milestone4.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" />
+                    <div className="flex flex-col w-52 sm:w-full md:max-w-72 gap-2 col-span-3 sm:col-span-1 sm:col-start-1 sm:row-start-3 text-center font-extralight text-white font-montserrat text-xs hover:scale-105 transition duration-500">
+                        {/* <img src="milestone4.1.jpg" alt="milestone" className="w-full h-40 sm:h-48 object-cover rounded-lg" /> */}
+                        <MilestoneSlider src={milestones[1][milestoneIndex]} />
                         <div className="flex gap-4 items-center">
                             <p className="text-xl font-semibold">2021 Apr</p>
                             <p className="text-left">Introduced to the world of software development by completing a certificate in software engineering at NIBM</p>
@@ -154,16 +173,19 @@ export default function About() {
                 {/* Interests */}
                 <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I Like</p>
                 <div className="flex max-sm:flex-col justify-between gap-5 sm:gap-10 text-center font-extralight text-white font-montserrat sm:text-lg md:text-xl">
-                    <div className="flex flex-col gap-2 ">
-                        <img src="football1.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" />
+                    <div className="flex flex-col gap-2 hover:scale-105 transition duration-500">
+                        {/* <img src="football1.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" /> */}
+                        <InterestSlider src={interests[0][interestIndex]} />
                         <p>Football</p>
                     </div>
-                    <div className="flex flex-col gap-2">
-                        <img src="touchTyping1.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" />
+                    <div className="flex flex-col gap-2 hover:scale-105 transition duration-500">
+                        {/* <img src="touchTyping1.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" /> */}
+                        <InterestSlider src={interests[1][interestIndex]} />
                         <p>Touch Typing</p>
                     </div>
-                    <div className="flex flex-col gap-2">
-                        <img src="gaming4.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" />
+                    <div className="flex flex-col gap-2 hover:scale-105 transition duration-500">
+                        {/* <img src="gaming4.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" /> */}
+                        <InterestSlider src={interests[2][interestIndex]} />
                         <p>Gaming</p>
                     </div>
                 </div>

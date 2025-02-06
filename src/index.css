@@ -8,3 +8,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.button_style {
+    @apply font-montserrat text-sm text-white mt-6 border border-white px-10 py-2 rounded-lg hover:bg-white hover:text-black transition duration-500;
+}

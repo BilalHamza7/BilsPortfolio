@@ -31,13 +31,13 @@ export default function Homepage(params) {
             {/* Navigation */}
             <div className="flex max-lg:justify-end lg:justify-between items-center px-10 py-8 h-10 bg-[#141414] w-full fixed z-50 top-0 left-0">
                 <div className="flex gap-10 max-lg:hidden text-center font-extralight text-white font-montserrat">
-                    <a href='#top'>Profile</a>
-                    <a href='#projects'>Projects</a>
+                    <a href='#top' className="hover:underline">Profile</a>
+                    <a href='#projects' className="hover:underline">Projects</a>
                 </div>
                 <p className={`absolute left-1/2 transform -translate-x-1/2 pointer-events-none w-full text-center text-white font-gupter transition-all duration-700 ${isAtTop ? 'translate-y-16 text-[56px] sm:translate-y-20 sm:text-[90px] md:translate-y-24 md:text-[110px] lg:translate-y-28 lg:text-[150px] xl:translate-y-32 xl:text-[190px]' : 'text-3xl sm:text-4xl md:text-5xl'}`}>Bilal Hamza</p>
                 <div className="flex gap-10 max-lg:hidden text-center font-extralight text-white font-montserrat">
-                    <a href='#about'>About</a>
-                    <a href='#contact'>Contact</a>
+                    <a href='#about' className="hover:underline">About</a>
+                    <a href='#contact' className="hover:underline">Contact</a>
                 </div>
                 <img src="menuIcon.png" alt="menu" className="w-7 lg:hidden" onClick={handlePanel} />
             </div>
