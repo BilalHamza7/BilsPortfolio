@@ -13,7 +13,7 @@ export default function Profile() {
                 </div>
 
                 <button className="button_style">
-                    See My Resume
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:1157b388-00fb-4cfe-b7f4-75ebd6e1296a" target="_blank" rel="noreferrer">See My Resume</a>
                 </button>
 
                 <div className="flex gap-8 lg:gap-16 [&_img]:w-12 [&_img]:sm:w-16 [&_img]:lg:w-20 mt-6">
