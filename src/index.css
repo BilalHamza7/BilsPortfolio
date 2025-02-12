@@ -12,3 +12,11 @@ html {
 .button_style {
     @apply font-montserrat text-sm text-white mt-6 border border-white px-10 py-2 rounded-lg hover:bg-white hover:text-black transition duration-500;
 }
+
+.description_text {
+    @apply  font-montserrat tracking-wider text-white text-center text-xs sm:text-base;
+}
+
+.title_text {
+    @apply  font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl;
+}

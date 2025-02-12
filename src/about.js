@@ -30,8 +30,8 @@ export default function About() {
 
     return (
         <>
-            <div className="mt-6 flex flex-col gap-10 items-center">
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">About Me</p>
+            <div className=" mt-6 lg:mt-12 flex flex-col gap-10 items-center">
+                <p className="title_text">About Me</p>
                 <div className="flex max-lg:flex-col items-center gap-5 w-full sm:px-16 md:px-20">
                     <img src="headshot.jpg" alt="headshot" className="w-60 h-64 sm:w-96 sm:h-72 md:w-96 md:h-80 lg:w-[600px] object-cover rounded-lg" />
                     <div className="grid grid-cols-2 gap-5 lg:gap-y-7 text-white font-montserrat text-sm sm:text-base md:text-lg font-light">
@@ -43,18 +43,18 @@ export default function About() {
                         <p><span className="text-gray-300 text-sm sm:text-base md:text-lg">Languages:</span><br></br> English,  Sinhalese, Tamil</p>
                     </div>
                 </div>
-                <p className="font-montserrat tracking-wider leading-5 font-extralight text-white text-xs sm:text-lg sm:text-center sm:px-12 md:px-16">Aspiring Full Stack Developer with a focus on building robust web applications using the MERN stack. Currently pursuing a Software Engineering degree at NIBM Colombo, where I am developing a strong foundation in both front-end and back-end technologies. Through personal projects and coursework, I have gained hands-on experience in creating dynamic user interfaces, implementing RESTful APIs, and managing databases. I am eager to leverage my skills and knowledge to develop scalable and efficient solutions that address real-world challenges.</p>
+                <p className="description_text leading-5 font-extralight sm:px-12 md:px-16">Aspiring Full Stack Developer with a focus on building robust web applications using the MERN stack. Currently pursuing a Software Engineering degree at NIBM Colombo, where I am developing a strong foundation in both front-end and back-end technologies. Through personal projects and coursework, I have gained hands-on experience in creating dynamic user interfaces, implementing RESTful APIs, and managing databases. I am eager to leverage my skills and knowledge to develop scalable and efficient solutions that address real-world challenges.</p>
 
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I Do</p>
-                <div className="grid grid-cols-3 gap-10 text-center font-extralight text-white font-montserrat text-xs sm:text-lg">
+                <p className="title_text">What I Do</p>
+                <div className="grid grid-cols-3 gap-10 description_text font-extralight">
                     <p>Frontend Development</p>
                     <p>Backend Development</p>
                     <p>User Interface Designing</p>
                 </div>
 
                 {/* Tech Stack */}
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I Use</p>
-                <div className="flex flex-wrap justify-center gap-x-6 sm:gap-x-12 gap-y-10 sm:px-16 w-full text-center font-extralight text-white font-montserrat text-xs sm:text-lg">
+                <p className="title_text">What I Use</p>
+                <div className="flex flex-wrap justify-center gap-x-6 sm:gap-x-12 gap-y-10 sm:px-16 w-full font-extralight description_text">
                     <div className="flex flex-col gap-2 items-center ">
                         <img src="reactIcon.png" alt="react" className="w-9 sm:w-11" />
                         React
@@ -108,7 +108,7 @@ export default function About() {
                         RESTful APIs
                     </div>
                 </div>
-                <p className="text-center font-light text-white font-montserrat text-xs sm:text-lg">This list reflects my current expertise, but I’m always excited to explore and adapt to new technologies.</p>
+                <p className="description_text font-light">This list reflects my current expertise, but I’m always excited to explore and adapt to new technologies.</p>
 
                 {/* Milestones */}
                 <div className="col-span-3 sm:hidden font-gupter text-white text-4xl">Milestones <span className="text-sm">Throughout The Years</span></div>
@@ -171,7 +171,7 @@ export default function About() {
                 </div>
 
                 {/* Interests */}
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I Like</p>
+                <p className="title_text">What I Like</p>
                 <div className="flex max-sm:flex-col justify-between gap-5 sm:gap-10 text-center font-extralight text-white font-montserrat sm:text-lg md:text-xl">
                     <div className="flex flex-col gap-2 hover:scale-105 transition duration-500">
                         {/* <img src="football1.jpg" alt="football" className="w-56 h-28 md:w-72 md:h-44 rounded-md" /> */}

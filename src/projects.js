@@ -19,7 +19,7 @@ export default function Projects() {
             <>
                 <div className="flex flex-col items-center gap-2 w-64 md:w-72 hover:scale-105 transition duration-500" >
                     <ProjectSlider src={src} />
-                    <p className="font-montserrat text-xs md:text-sm text-center font-light text-white">{desc}</p>
+                    <p className="description_text font-light ">{desc}</p>
                 </div>
             </>
         )
@@ -36,7 +36,7 @@ export default function Projects() {
     return (
         <>
             <div className=" mt-6 lg:mt-12 flex flex-col gap-10 items-center">
-                <p className="font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">What I've Built</p>
+                <p className="title_text">What I've Built</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 font-montserrat">
                     <a href="https://project-promptopia-bilalhamza7s-projects.vercel.app/" target="_blank" rel="noreferrer" >
                         <ProjectImages src={projects[0][rowIndex]} desc='An AI-prompt sharing website developed using Next.js and tailwindcss' />
@@ -49,7 +49,7 @@ export default function Projects() {
                     </a>
                 </div>
                 <div className="flex flex-col gap-2 items-center">
-                    <p className=" font-montserrat tracking-wider text-white text-center text-sm">Want to see more of my projects?</p>
+                    <p className="description_text">Want to see more of my projects?</p>
                     <button className="button_style">
                         <a href="https://github.com/BilalHamza7?tab=repositories" target="_blank" rel="noreferrer">
                             GitHub Profile
@@ -57,7 +57,7 @@ export default function Projects() {
                     </button>
                 </div>
 
-                <p className=" font-gupter tracking-wider font-light text-white text-center text-3xl sm:text-5xl">Design Concepts</p>
+                <p className=" title_text">Design Concepts</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 font-montserrat">
                     <a href="https://www.figma.com/proto/Fk924sx721kYF91AEqoSfK/GemsOfCeylon?node-id=114-148&t=RXi656d17JOrUElq-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6&hide-ui=1" target="_blank" rel="noreferrer" >
                         <ProjectImages src={projects[3][rowIndex]} desc='A gemstone inventory management system including features to track purchases and sales' />

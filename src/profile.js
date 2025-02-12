@@ -2,8 +2,8 @@ export default function Profile() {
     return (
         <>
             <div className="mt-16 sm:mt-24 md:mt-28 lg:mt-36 xl:mt-44 flex flex-col items-center lg:gap-5">
-                <p className="font-montserrat tracking-wider font-light text-white text-center text-xs sm:text-base md:px-16">A full-stack software engineer from Colombo, Sri Lanka. I build performant web applications and thrive on solving complex problems through innovative solutions.</p>
-                <div className="mt-6 flex flex-wrap items-center justify-center gap-3 font-extralight text-white font-montserrat text-xs sm:text-sm">
+                <p className="description_text md:px-16">A full-stack software engineer from Colombo, Sri Lanka. I build performant web applications and thrive on solving complex problems through innovative solutions.</p>
+                <div className="description_text mt-6 flex flex-wrap items-center justify-center gap-3 font-extralight">
                     <p>Problem Solver</p>
                     <p>Continuos Learner</p>
                     <p>Quick Learner</p>
@@ -13,7 +13,7 @@ export default function Profile() {
                 </div>
 
                 <button className="button_style">
-                    <a href="https://drive.google.com/file/d/1z8KhfycqcqjgvDsGHYPEu3vSS6iWqTQZ/view?usp=sharing" target="_blank" rel="noreferrer">See My Resume</a>
+                    <a href="https://drive.google.com/file/d/1oUuq6hU-VW6XHGVsG-aAqMuNaaHJj7nA/view?usp=sharing" target="_blank" rel="noreferrer">See My Resume</a>
                 </button>
 
                 <div className="flex gap-8 lg:gap-16 [&_img]:w-12 [&_img]:sm:w-16 [&_img]:lg:w-20 mt-6">
